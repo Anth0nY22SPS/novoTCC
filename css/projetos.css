@@ -55,6 +55,7 @@ main {
 .hero h1 {
   font-size: 3em;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .hero img {
@@ -77,6 +78,7 @@ main {
 .vida-verde h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .vida-verde .images {

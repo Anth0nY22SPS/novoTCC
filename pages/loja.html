@@ -9,8 +9,7 @@
 <body>
 
 <header>
-    <nav>
-        <div class="container_links">
+     <div class="container_links">
             <ul>
                 <li><a href="../index.html">HOME</a></li>
                 <li><a href="./loja.html">LOJA</a></li>
@@ -18,21 +17,9 @@
                 <li id="linkEspecial"><a href="./cadastro1.html">CADASTRE-SE</a></li>
             </ul>
         </div>
-    </nav>
-</header>
+  </header>
 
 <main>
-
-    <div class="imagem-container">
-        <img src="../img/imgsLoja/fruta/fruta2.jpeg" alt="Loja de Sementes" />
-        <div class="container_nome">
-            <h2>MELANCIA</h2><br>
-            <p id=money>SEMENTE DE MELANCIA</p><br>
-            <P>$15,99</P><br>
-            <button onclick="abrirModal()">Fazer compra</button>
-        </div>
-    </div>
-
     
     <section class="Produtos">
 
@@ -40,6 +27,7 @@
                 <p id="p_principal">Frutas</p>
             </aside>
             
+
             <aside class="verduras">
                 <p id="p_principal">Verduras</p>
             </aside>
@@ -56,7 +44,8 @@
 
     <div id="meuModal" class="modal">
       <div class="modal-conteudo">
-        <p>Compra realizada 👌</p>
+        <h2>Obrigado pela sua compra! 🌱</h2><br><br>
+        <p>Seu pedido foi realizado com sucesso.<br><br>
         <button onclick="fecharModal()">Fechar</button>
       </div>
     </div>
@@ -103,5 +92,18 @@
 </footer>
 
 <script src="../js/scriptLoja.js"></script>
+<script>
+    function gerarCard(element) {
+        return `
+            <div class="card">
+                <img src="${element.img}" alt="">
+                <h3>${element.Nome}</h3>
+                <p>${element.Descricao}</p>
+                <p>R$ ${element.Preco}</p>
+                <button onclick="abrirModal()" id="botaoAbrir">Fazer compra</button>
+            </div>
+        `;
+    }
+</script>
 </body>
 </html>

@@ -80,7 +80,13 @@ body {
 .btn:hover {
   background-color: #388E3C;
 }
-
+#banner{
+  background-image: url(../img/BANNER22.jfif);
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+  width: 100%;
+}
 /* Seção Produtos */
 .produtos {
   padding: 25px 20px;
@@ -271,21 +277,53 @@ body {
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .container_links ul {
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    margin: 20px 0;
+   #headerPrincipal {
+    padding: 10px 15px;
+    text-align: center;
+    
   }
 
+  #containerH {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+  }
+
+  .logo img {
+    width: 130px;
+    margin-left: 0;
+  }
+
+  .menu-links {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  .menu-links li a {
+    font-size: 16px;
+    padding: 8px 14px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-links li a.especial {
+    width: 100%;
+    background-color: #828282;
+    color: white;
+  }
+
+  .menu-links li a.especial:hover {
+    background-color: #666;
+  }
   #banner {
     height: 400px;
   }
 
-  .titulo-banner {
-    font-size: 28px;
-    text-align: center;
-  }
 
   .cards-container {
     grid-template-columns: 1fr;
@@ -317,15 +355,33 @@ body {
     height: auto;
   }
 
-  .projeto {
-    padding: 20px;
+   .projeto {
+    padding: 25px 15px;
+  }
+
+  .projeto-container {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .secao-titulo2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .projeto-texto,
+  .projeto-img {
+    flex: 1 1 100%;
+    text-align: center;
   }
 
   .projeto-img img {
     width: 100%;
-    height: auto;
+    max-width: 300px;
+    border-radius: 15px;
   }
-
   .footer-container {
     gap: 20px;
   }

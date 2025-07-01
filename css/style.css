@@ -15,53 +15,55 @@ body {
 
 
 /* Header e banner */
-#banner {
-  background-image: url("../img/BANNER22.jfif");
-  background-size: cover;
-  background-position: center;
-  height: 865px;
-  position: relative;
+#headerPrincipal {
+  background-color: #e8f5e9;
+  padding: 10px 50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-
-
-#linkEspecial a{
-    background-color: #828282;
-    color: white;
-    border-radius: 4px;
-    padding: 10px;
+#containerH {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.container_links ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-right: 100px;
-    gap: 40px;
-    list-style: none;
+.logo img {
+  width: 200px;
+  height: auto;
 }
 
-.container_links ul li a{
-    font-size: 1rem;
-    text-decoration: none;
-    color:  black;
+.menu-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.titulo-banner-container {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.titulo-banner {
-  color: white;
-  font-size: 60px;
+.menu-links li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
   font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
 }
+
+.menu-links li a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Destaque do botão "Cadastre-se" */
+.menu-links li a.especial {
+  background-color: #828282;
+  color: white;
+}
+.menu-links li a.especial:hover {
+  background-color: #666;
+}
+
 
 /* Botões */
 .btn {
@@ -82,7 +84,7 @@ body {
 
 /* Seção Produtos */
 .produtos {
-  padding: 60px 20px;
+  padding: 25px 20px;
   background-color: #ffffff;
   text-align: center;
 }
@@ -131,14 +133,14 @@ body {
 
 /* Feirantes */
 .feirantes {
-  padding: 2px 300px;
+  padding: 55px 300px;
   text-align: center;
   background-color: #e8f5e9;
   margin-top: 20px;
 }
 
 .secao-titulo{
-  margin-left: 600px;
+  margin-left: 755px;
 }
 
 .feirantes-content {
@@ -157,22 +159,21 @@ body {
 .feirantes-left img {
   width: 70%;
   height: 70%;
-  border-radius: 15px;
-  margin-top: 20px;
+  border-radius: 20px;
+  margin-top: -80px;
 }
 
 .feirantes-right img{
   width: 100%;
-  margin-top: 10px;
   border-radius: 20px;
-   margin-left: 10px;
-   margin-top: 20;
+   margin-left: 5px;
+   margin-top: 20px;
 
 }
 
 /* Projeto */
 .projeto {
-  padding: 2px 300px;
+  padding: 55px 300px;
   background-color: #ffffff;
 }
 
@@ -180,7 +181,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  margin-top: 25px;
   align-items: center;
+  margin-left: 200px;
 }
 
 .secao-titulo2{
@@ -195,7 +198,7 @@ body {
 
 .projeto-img img {
   width: 50%;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 /* Footer */

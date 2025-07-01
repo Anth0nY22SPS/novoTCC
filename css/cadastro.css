@@ -138,9 +138,7 @@ span{
   border-radius: 10px;
   text-align: center;
 }
-#menu{
-  display: none;
-}
+
 .footer {
   background-color: #2e2e2e;
   color: #eee;
@@ -209,44 +207,6 @@ span{
   color: #ccc;
 }
 
-@media screen and (max-width: 768px) {
-  /* Esconde menu desktop */
-  #headerPrincipal {
-    padding: 10px 15px;
-    text-align: center;
-  }
-
-  #containerH {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .logo img {
-    width: 130px;
-    margin-left: 0;
-  }
-
-  .menu-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 0;
-  }
-
-  .menu-links li a {
-    font-size: 16px;
-    padding: 8px 12px;
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
-  .menu-links li a.especial {
-    width: 100%;
-  }
-}
-
   /* Layout empilhado */
   #container {
     flex-direction: column;
@@ -290,58 +250,88 @@ span{
     margin-top: 20px;
   }
 
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .footer-box {
-    flex: 1 1 100%;
+  @media (max-width: 390px) {
+  /* Layout empilhado */
+    #headerPrincipal {
+    padding: 10px 20px;
     text-align: center;
   }
 
-  .footer-box input[type="email"],
-  .footer-box button {
+  #containerH {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 120px;
+    height: auto;
+    margin-left: 0; /* Remove a margem que quebra no mobile */
+  }
+
+  .menu-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-links li a {
+    font-size: 16px;
+    padding: 8px 12px;
     width: 100%;
+    text-align: center;
+    display: block;
   }
 
-  .footer-bottom {
-    font-size: 0.8rem;
+  .menu-links li a.especial {
+    background-color: #828282;
+    color: white;
   }
 
-@media screen and (max-width: 480px) {
-  #login {
-    padding: 15px;
+  .menu-links li a.especial:hover {
+    background-color: #666;
+  }
+  #container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+    gap: 30px;
   }
 
   #cadastre-se {
-    padding: 15px;
-  }
-
-  .navMob a {
-    font-size: 16px;
-  }
-
-  #login h1 {
-    font-size: 24px;
-  }
-
-  #cadastre-se h2 {
-    font-size: 22px;
+    margin: 0;
+    padding: 20px;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
   }
 
   #cadastre-se ol {
-    font-size: 15px;
+    margin-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  #login {
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
   }
 
   #login input {
-    padding: 10px;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   #login button {
-    font-size: 15px;
-    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
   }
 }

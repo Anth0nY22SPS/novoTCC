@@ -29,8 +29,9 @@ body {
 }
 
 .logo img {
-  width: 200px;
+  width: 170px;
   height: auto;
+  margin-left: 170px;
 }
 
 .menu-links {

@@ -1,0 +1,95 @@
+[
+    {
+        "Categoria": "terras",
+        "Nome": "Terra Vegetal",
+        "Descricao": "Terra vegetal ",
+        "Preco": "18.90",
+        "img": "../img/imgsLoja/terra/terra1.jpeg"
+    },
+    {
+        "Categoria": "terras",
+        "Nome": "Terra Minhoca",
+        "Descricao": "Terra humus de minhoca",
+        "Preco": "10.00" ,
+        "img": "../img/imgsLoja/terra/terra2.jpeg"
+    },
+    {
+        "Categoria": "terras",
+        "Nome": "Terra Organica",
+        "Descricao": "Terra adubos organicos",
+        "Preco": "10.00" ,
+        "img": "../img/imgsLoja/terra/terra3.jpeg"
+    },
+
+
+
+    {
+        "Categoria": "frutas",
+        "Nome": "Morango",
+        "Descricao": "semente de melancia",
+        "Preco": "14.00",
+        "img": "../img/imgsLoja/fruta/fruta1.jpeg"
+    },
+    {
+        "Categoria": "frutas",
+        "Nome": "Melancia",
+        "Descricao": "Sementes de melão",
+        "Preco": "12.00",
+        "img": "../img/imgsLoja/fruta/fruta2.jpeg"
+    },
+    {
+        "Categoria": "frutas",
+        "Nome": "Melão",
+        "Preco": "18.90",
+        "Descricao": "Sementes de morango",
+        "img": "../img/imgsLoja/fruta/fruta3.jpeg"
+    },
+
+
+
+    {
+        "Categoria": "verduras",
+        "Nome": "Alface",
+        "Preco": "16.00",
+        "Descricao": "Sementes de alface",
+        "img": "../img/imgsLoja/legumes/legumes1.jpeg"
+    },
+    {
+        "Categoria": "verduras",
+       "Nome": "Couve",
+        "Preco":"8.00",
+        "Descricao": "Sementes de couve",
+        "img": "../img/imgsLoja/legumes/legumes2.jpeg"
+    },
+    {
+        "Categoria": "verduras",
+        "Nome": "Rúcula",
+        "Preco": "18.90",
+        "Descricao": "Sementes de rúcula",
+        "img": "../img/imgsLoja/legumes/legumes3.jpeg"
+    },
+
+
+
+    {
+        "Categoria": "legumes",
+        "Nome": "Beterraba",
+        "Preco": "15.00" ,
+        "Descricao": "Sementes de beterraba",
+        "img": "../img/imgsLoja/verdura/verdura1.jpeg"
+    },
+    {
+        "Categoria": "legumes",
+        "Nome": "Cenoura",
+        "Preco": "12.50" ,
+        "Descricao": "Sementes de cenoura",
+        "img": "../img/imgsLoja/verdura/verdura2.jpeg"
+    },
+    {
+        "Categoria": "legumes",
+        "Nome": "Abobrinha",
+        "Preco": "9.90" ,
+        "Descricao": "Sementes de abobrinha",
+        "img": "../img/imgsLoja/verdura/verdura3.jpeg"
+    }
+]

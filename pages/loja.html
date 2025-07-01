@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vida Verde</title>
+  <link rel="stylesheet" href="../css/loja.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="container_links">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./loja.html">LOJA</a></li>
+                <li><a href="./projetos.html">PROJETO</a></li>
+                <li id="linkEspecial"><a href="./cadastro1.html">CADASTRE-SE</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <div class="imagem-container">
+        <img src="../img/imgsLoja/fruta/fruta2.jpeg" alt="Loja de Sementes" />
+        <div class="container_nome">
+            <h2>MELANCIA</h2><br>
+            <p id=money>SEMENTE DE MELANCIA</p><br>
+            <P>$15,99</P><br>
+            <button onclick="abrirModal()">Fazer compra</button>
+        </div>
+    </div>
+
+    
+    <section class="Produtos">
+
+            <aside class="frutas">
+                <p id="p_principal">Frutas</p>
+            </aside>
+            
+            <aside class="verduras">
+                <p id="p_principal">Verduras</p>
+            </aside>
+
+            <aside class="legumes">
+                <p id="p_principal">Legumes</p>
+            </aside>
+
+            <aside class="terras">
+                <p id="p_principal">Terras</p>
+            </aside>
+    </section>
+
+
+    <div id="meuModal" class="modal">
+      <div class="modal-conteudo">
+        <p>Compra realizada 👌</p>
+        <button onclick="fecharModal()">Fechar</button>
+      </div>
+    </div>
+</main>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-box">
+            <h3>Sobre Nós</h3>
+            <p>Somos apaixonados por plantar um futuro melhor. Cada semente que você compra ajuda a transformar vidas.</p>
+        </div>
+        
+        <div class="footer-box">
+            <h3>Links Úteis</h3>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="./loja.html">Catálogo de Sementes</a></li>
+                <li><a href="./projetos.html">Projeto Horta Solidária</a></li>
+                <li><a href="./cadastro1.html">Contato</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-box">
+            <h3>Contato</h3>
+            <p>📍 São Paulo – SP</p>
+            <p>✉️ contato@vidaverde.com.br</p>
+            <p>📞 (11) 99999–9999</p>
+        </div>
+        
+        <div class="footer-box">
+            <h3>Newsletter</h3>
+            <p>Receba novidades e dicas de cultivo:</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Digite seu e-mail" required />
+                <button type="submit">Assinar</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Projeto Vida Verde. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script src="../js/scriptLoja.js"></script>
+</body>
+</html>

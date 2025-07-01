@@ -1,14 +1,19 @@
+
+
 @charset "UTF-8";
+
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: poppins, sans-serif;
 }
 
 
-body{
-    background-color: whitesmoke;   
+main{
+    background-color: whitesmoke;  
 }
 
 /*header*/
@@ -97,7 +102,14 @@ body{
     text-align: center;
 }
 
-
+.modal-conteudo button{
+    height: 30px;
+    width: 80px;
+    color: white;
+    border: 0px;
+    background-color: black;
+    border-radius: 20px;
+}
 
 
 .verduras img,
@@ -138,12 +150,21 @@ body{
 }
 
 
+#botaoAbrir{
+    height: 40px;
+    width: 200px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: 0px;
+}
+
 
 /* FOOTER*/
 footer {
   background-color: #2e2e2e;
   color: #eee;
-  margin-top: 250px;
   padding: 40px 20px;
 }
 
@@ -211,7 +232,7 @@ footer {
 
 
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 712px) {
     #p_principal {
         font-size: 2rem;
         text-align: center;
@@ -235,8 +256,8 @@ footer {
     .frutas img,
     .legumes img,
     .terras img {
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
         object-fit: contain;
         margin: 0;
         padding: 0;
@@ -246,10 +267,9 @@ footer {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
-        gap: 12px;
+        gap: 22px;
         scroll-snap-type: x mandatory;
         justify-content: flex-start;
-        padding: 8px 8px 16px;
         scrollbar-width: none; /* Firefox */
         -ms-overflow-style: none; /* IE and Edge */
     }
@@ -295,14 +315,13 @@ footer {
         align-items: center;
         justify-content: center;
         margin: 16px 0 0 0;
-        gap: 16px;
-        margin-right: 0;
-        padding-left: 20%;
+        gap: 1px;
+        padding-left: 0%;
     }
 
     .container_links ul li a {
-        font-size: 1.1rem;
-        padding: 8px 24px;
+        font-size: .8rem;
+        padding: 8px 24px ;
         border-radius: 8px;
         width: 100%;
         text-align: center;
@@ -314,6 +333,15 @@ footer {
     }
     .container_nome button {
         width: 70%;
+    }
+
+    .modal-conteudo {
+        width: 80%;
+        height: 20%;
+        padding: 10px;
+        border-radius: 10px;
+        align-items: center;
+        text-align: center;
     }
     
 }

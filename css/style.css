@@ -289,7 +289,12 @@ body {
     gap: 10px;
     
   }
-
+  #banner {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    margin-right: 40px;
+  }
   .logo img {
     width: 130px;
     margin-left: 0;
